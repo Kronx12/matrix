@@ -51,8 +51,8 @@ class Vector:
     def norm(self):
         result = 0.0
         for i in range(len(self.values)):
-            result += math.pow(self.values[i], 2)
-        return math.sqrt(result)
+            result += self.values[i] ** 2
+        return round(result ** 0.5, 5)
 
     def norm_inf(self):
         return max([abs(i) for i in self.values])
