@@ -1,6 +1,9 @@
 #!/bin/python3
+import sys
 
-from Vector import Vector
+sys.path.append('../')
+
+from Classes.Vector import Vector
 
 def cross_product(vector_a, vector_b):
     if type(vector_a) != Vector or type(vector_b) != Vector or vector_a.shape() != 3 or vector_b.shape() != 3:

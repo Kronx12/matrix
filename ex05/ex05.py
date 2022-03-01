@@ -1,6 +1,9 @@
 #!/bin/python3
+import sys
 
-from Vector import Vector
+sys.path.append('../')
+
+from Classes.Vector import Vector
 
 def angle_cos(vector_a, vector_b):
     if type(vector_a) != Vector or type(vector_b) != Vector:

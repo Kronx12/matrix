@@ -1,6 +1,9 @@
 #!/bin/python3
+import sys
 
-from Matrix import Matrix
+sys.path.append('../')
+
+from Classes.Matrix import Matrix
 
 # Subject tests:
 print("Subject tests:")

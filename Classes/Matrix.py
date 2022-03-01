@@ -1,4 +1,4 @@
-from Vector import Vector
+from Classes.Vector import Vector
 
 class Matrix:
     def __init__(self, values_arr):

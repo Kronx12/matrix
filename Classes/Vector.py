@@ -39,3 +39,18 @@ class Vector:
         for i in range(len(self.values)):
             result += self.values[i] * vector.values[i]
         return result
+
+    def norm_1(self):
+        result = 0.0
+        for i in range(len(self.values)):
+            result += abs(self.values[i])
+        return result
+
+    def norm(self):
+        result = 0.0
+        for i in range(len(self.values)):
+            result += self.values[i] ** 2
+        return round(result ** 0.5, 5)
+
+    def norm_inf(self):
+        return max([abs(i) for i in self.values])

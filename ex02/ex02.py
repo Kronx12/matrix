@@ -1,7 +1,10 @@
 #!/bin/python3
+import sys
 
-from Vector import Vector
-from Matrix import Matrix
+sys.path.append('../')
+
+from Classes.Vector import Vector
+from Classes.Matrix import Matrix
 
 def lerp(value_a, value_b, scalar):
     if type(value_a) != type(value_b) or (type(value_a) != int and type(value_a) != float and type(value_a) != Vector and type(value_a) != Matrix):

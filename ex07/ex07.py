@@ -1,7 +1,10 @@
 #!/bin/python3
+import sys
 
-from Vector import Vector
-from Matrix import Matrix
+sys.path.append('../')
+
+from Classes.Matrix import Matrix
+from Classes.Vector import Vector
 
 # Subject tests:
 print("Subject tests:")

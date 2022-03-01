@@ -1,6 +1,9 @@
 #!/bin/python3
+import sys
 
-from Vector import Vector
+sys.path.append('../')
+
+from Classes.Vector import Vector
 
 # Subject tests:
 print("Subject tests:")
