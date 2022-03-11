@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 import sys
 
 sys.path.append('../')
@@ -38,6 +38,7 @@ u.scl(2.)
 print(u)
 
 # Corrections exemples:
+print("Correction tests:")
 
 # Add
 print("Addition tests:")

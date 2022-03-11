@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 import sys
 
 sys.path.append('../')
@@ -54,4 +54,7 @@ print(angle_cos(u, v))
 u = Vector([-7., 3.])
 v = Vector([6., 4.])
 print(angle_cos(u, v))
+
+# Reverse angle:
+print("Reverse angle:")
 print(angle_cos(v, u))

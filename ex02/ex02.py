@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 import sys
 
 sys.path.append('../')
@@ -32,6 +32,8 @@ print(lerp(Matrix([[2., 1.], [3., 4.]]), Matrix([[20., 10.], [30., 40.]]), 0.5))
 
 # Corrections tests:
 print("Correction tests:")
+print(lerp(0., 1., 0.))
+print(lerp(0., 1., 1.))
 print(lerp(0., 42., 0.5))
 print(lerp(-42., 42., 0.5))
 print(lerp(Vector([-42., 42.]), Vector([42., -42.]), 0.5))

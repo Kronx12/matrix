@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 import sys
 
 sys.path.append('../')
@@ -17,9 +17,6 @@ u = Matrix([[1, 2], [2, 4]])
 print("From : " + str(u) + " To : " + str(u.row_echelon()))
 
 u = Matrix([[8., 5., -2., 4., 28.], [4., 2.5, 20., 4., -4.], [8., 5., 1., 4., 17.]])
-print("From : " + str(u) + " To : " + str(u.row_echelon()))
-
-u = Matrix([[8., 5., -2., 4., 28.], [8., 5., 1., 4., 17.], [3., 2.5, 20., 4., -4.]])
 print("From : " + str(u) + " To : " + str(u.row_echelon()))
 
 # Corrections tests:
