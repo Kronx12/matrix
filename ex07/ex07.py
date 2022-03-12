@@ -28,6 +28,16 @@ u = Matrix([[1., 0.], [0., 1.]])
 v = Matrix([[2., 1.], [4., 2.]])
 print(u.mul_mat(v))
 
+u = Matrix([[2, 5, 3],
+            [3, 6, 4],
+            [5, 2, 0]])
+v = Matrix([[1, 3, 4, 5],
+            [2, 8, 7, 2],
+            [0, 1, 2, 8]])
+print(v.shape())
+print(u.shape())
+print(u.mul_mat(v))
+
 u = Matrix([[3., -5.], [6., 8.]])
 v = Matrix([[2., 1.], [4., 2.]])
 print(u.mul_mat(v))
