@@ -56,12 +56,12 @@ class Matrix:
         return Vector(result)
 
     def mul_mat(self, matrix):
-        if type(matrix) != Matrix or self.shape()[0] != matrix.shape()[1] or self.shape()[1] != matrix.shape()[0]:
+        if type(matrix) != Matrix or self.shape()[1] != matrix.shape()[0]:
             raise TypeError
         result = []
         for i in range(self.shape()[0]):
             row = []
-            for j in range(self.shape()[0]):
+            for j in range(matrix.shape()[1]):
                 tmp = 0
                 for k in range(self.shape()[1]):
                     tmp += self.values[i][k] * matrix.values[k][j]

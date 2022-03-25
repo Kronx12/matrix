@@ -34,8 +34,12 @@ u = Matrix([[2, 5, 3],
 v = Matrix([[1, 3, 4, 5],
             [2, 8, 7, 2],
             [0, 1, 2, 8]])
-print(v.shape())
-print(u.shape())
+print(u.shape(), v.shape())
+print(u.mul_mat(v))
+
+u = Matrix([[2]])
+v = Matrix([[1, 3, 4, 5]])
+print(u.shape(), v.shape())
 print(u.mul_mat(v))
 
 u = Matrix([[3., -5.], [6., 8.]])
